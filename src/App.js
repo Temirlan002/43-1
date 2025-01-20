@@ -1,17 +1,21 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter, Routes, Route  } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import NotFound from './pages/NotFound'
+import Main from './pages/Main';
+import SwiperComponent from './components/Swiper';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='*' element={<NotFound />} />
-      </Routes>
-    </BrowserRouter>
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route path='/' element={<HomePage />} />
+    //     <Route path='*' element={<NotFound />} />
+    //   </Routes>
+    // </BrowserRouter>
+    <div className='App'>
+      {/* <Main /> */}
+      <SwiperComponent />
+    </div>
 
   );
 }
